@@ -1,0 +1,83 @@
+:root{
+  --text:#111;
+  --muted:#8a8a8a;
+  --accent:#7c8e76;
+  --line:#7c8e76;
+  --font:'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%%}
+body{
+  margin:0;
+  font:16px/1.55 var(--font);
+  color:var(--text);
+  background:#fff;
+}
+
+.wrap{
+  max-width:720px;
+  margin:0 auto;
+  padding:48px 22px 60px;
+  text-align:center;
+}
+
+h1{
+  font-weight:700;
+  font-size:clamp(26px, 5.5vw, 40px);
+  margin:0 0 28px;
+}
+
+.search-area{
+  width:min(680px, 92vw); /* по-широко поле */
+  margin:0 auto 8px;
+}
+.search-area input[type="search"]{
+  width:100%%;
+  border:none;
+  outline:none;
+  background:transparent;
+  font:600 20px/1.5 var(--font);
+  padding:6px 2px 4px;
+  text-align:center;
+}
+.search-area input::placeholder{
+  color:var(--muted);
+  font-weight:500;
+  opacity:.85;
+}
+.search-area .underline{
+  height:2px;
+  width:100%%;
+  background:var(--line);
+  margin:6px 0 0;
+}
+.search-area input[type="search"]:focus + .underline{
+  background: var(--accent);
+}
+
+/* адаптивност */
+@media (max-width: 480px){
+  .search-area input[type="search"]{ font-size:18px; }
+}
+@media (min-width: 1024px){
+  .search-area{ width:min(760px, 92vw); }
+}
+
+.list{
+  list-style:none;
+  margin:28px auto 0;
+  padding:0;
+  width:min(560px, 92vw);
+  text-align:left;
+}
+.list li{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  padding:12px 4px;
+  border-bottom:1px solid #efefef;
+  font-size:18px;
+}
+.list li .name{ font-weight:500 }
+.list li .table{ color:#333; font-weight:700 }
