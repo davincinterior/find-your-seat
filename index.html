@@ -4,17 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Намери своето място</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </noscript>
+
   <link rel="stylesheet" href="styles.css">
+  <meta name="color-scheme" content="light only">
 </head>
 <body>
   <main class="wrap">
     <h1>Намери своето място</h1>
 
     <div class="search-area">
-      <input id="q" type="search" placeholder="Въведете името си" aria-label="Въведете името си">
+      <input id="q" type="search" placeholder="Въведете името си" aria-label="Въведете името си" autocomplete="name">
       <div class="underline"></div>
     </div>
 
@@ -22,8 +33,8 @@
   </main>
 
   <script>
-    window.PRELOADED = [{"name": "Петър Петров", "table": "7"}, {"name": "Снежана Петрова", "table": "7"}, {"name": "Димитър Балабанов", "table": "7"}, {"name": "Цветан Радев", "table": "7"}, {"name": "Росица Атанасова", "table": "7"}, {"name": "Георги Върбанов", "table": "7"}, {"name": "Карина Абу Еше", "table": "7"}, {"name": "Мартин Радев", "table": "7"}, {"name": "Димитър Ходжев", "table": "6"}, {"name": "Ваня Ралчева", "table": "6"}, {"name": "Дилян Иванов", "table": "6"}, {"name": "Боян Иванов", "table": "6"}, {"name": "Виктория Денчева", "table": "6"}, {"name": "Мария Куюджуклиева", "table": "6"}, {"name": "Никола Георгиев", "table": "6"}, {"name": "Дженифър Иванова", "table": "6"}, {"name": "Георги Василев", "table": "6"}, {"name": "Дебора Христова", "table": "6"}, {"name": "Жулиан Христов", "table": "6"}, {"name": "Елизабет Черкезова", "table": "4"}, {"name": "Мелин Алиева", "table": "4"}, {"name": "Анна Ралчева", "table": "4"}, {"name": "Кристиан Ралчев", "table": "4"}, {"name": "Константин Стефанов", "table": "4"}, {"name": "Румен Черкезов", "table": "4"}, {"name": "Стефи Ралчева", "table": "4"}, {"name": "Камен Куцаров", "table": "3"}, {"name": "Надка Куцарова", "table": "3"}, {"name": "Стефан Савов", "table": "3"}, {"name": "Миглена Савова (с Мартин Ралчев)", "table": "3"}, {"name": "Цветелина Кирилова", "table": "3"}, {"name": "Камен Куцаров", "table": "3"}, {"name": "Свилен Куцаров", "table": "3"}, {"name": "Христо Савов", "table": "3"}, {"name": "Полина Гецова", "table": "3"}];
+    window.PRELOADED = [{"name": "Петър Петров", "table": "7"}, {"name": "Снежана Петрова", "table": "7"}, {"name": "Димитър Балабанов", "table": "7"}, {"name": "Цветан Радев", "table": "7"}, {"name": "Росица Атанасова", "table": "7"}, {"name": "Георги Върбанов", "table": "7"}, {"name": "Карина Абу Еше", "table": "7"}, {"name": "Мартин Радев", "table": "7"}, {"name": "Димитър Ходжев", "table": "6"}, {"name": "Ваня Ралчева", "table": "6"}, {"name": "Дилян Иванов", "table": "6"}, {"name": "Боян Иванов", "table": "6"}, {"name": "Виктория Денчева", "table": "6"}, {"name": "Мария Куюджуклиева Яра", "table": "6"}, {"name": "Никола Георгиев", "table": "6"}, {"name": "Дженифър Иванова", "table": "6"}, {"name": "Георги Василев", "table": "6"}, {"name": "Дебора Христова", "table": "6"}, {"name": "Жулиан Христов", "table": "6"}, {"name": "Елизабет Черкезова", "table": "4"}, {"name": "Мелин Алиева", "table": "4"}, {"name": "Анна Ралчева", "table": "4"}, {"name": "Кристиан Ралчев", "table": "4"}, {"name": "Константин Стефанов", "table": "4"}, {"name": "Румен Черкезов", "table": "4"}, {"name": "Стефи Ралчева", "table": "4"}, {"name": "Камен Куцаров", "table": "3"}, {"name": "Надка Куцарова", "table": "3"}, {"name": "Стефан Савов", "table": "3"}, {"name": "Миглена Савова (с Мартин Ралчев)", "table": "3"}, {"name": "Цветелина Кирилова", "table": "3"}, {"name": "Камен Куцаров", "table": "3"}, {"name": "Свилен Куцаров", "table": "3"}, {"name": "Христо Савов", "table": "3"}, {"name": "Полина Гецова", "table": "3"}];
   </script>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
