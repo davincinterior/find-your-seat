@@ -24,7 +24,7 @@
     const frag = document.createDocumentFragment();
     for (const r of results) {
       const li = document.createElement("li");
-      li.innerHTML = `<span class="name">${escapeHTML(r.name)}</span><span class="table">Маса ${escapeHTML(r.table)}</span>`;
+      li.innerHTML = `<span class="name">${escapeHTML(r.name)}</span><span class="table">${escapeHTML(r.table)}</span>`;
       frag.appendChild(li);
     }
     list.appendChild(frag);
